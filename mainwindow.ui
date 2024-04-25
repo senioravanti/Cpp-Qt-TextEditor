@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>997</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="font">
+       <font>
+        <family>JetBrains Mono</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>997</width>
+     <height>36</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSaveDocument"/>
+   <addaction name="actionOpenDocument"/>
+   <addaction name="separator"/>
+   <addaction name="actionTextColor"/>
+   <addaction name="separator"/>
+   <addaction name="actionItalic"/>
+   <addaction name="actionBold"/>
+   <addaction name="actionUnderline"/>
+   <addaction name="actionStrikeOut"/>
+   <addaction name="separator"/>
+   <addaction name="actionCenter"/>
+   <addaction name="actionJustify"/>
+   <addaction name="actionLeft"/>
+   <addaction name="actionRight"/>
+   <addaction name="separator"/>
+   <addaction name="actionOrdered"/>
+   <addaction name="actionBullet"/>
+   <addaction name="actionDecreseIndent"/>
+   <addaction name="actionIncreaseIndent"/>
+   <addaction name="separator"/>
+   <addaction name="actionImage"/>
+   <addaction name="actionLink"/>
+   <addaction name="separator"/>
+   <addaction name="actionEditHTML"/>
+  </widget>
+  <action name="actionBold">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/bold.svg</normaloff>:/icons/bold.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Bold</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionItalic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/italic.svg</normaloff>:/icons/italic.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Italic</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStrikeOut">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/strikethrough.svg</normaloff>:/icons/strikethrough.svg</iconset>
+   </property>
+   <property name="text">
+    <string>StrikeOut</string>
+   </property>
+   <property name="toolTip">
+    <string>Перечеркнутый текст</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionJustify">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/align-center.svg</normaloff>:/icons/align-center.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Center</string>
+   </property>
+   <property name="toolTip">
+    <string>Выровнять по ширине</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionCenter">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/align-left.svg</normaloff>:/icons/align-left.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Center</string>
+   </property>
+   <property name="toolTip">
+    <string>Выровнять по центру</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionUnderline">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/underline.svg</normaloff>:/icons/underline.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Underline</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionLeft">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/align-right.svg</normaloff>:/icons/align-right.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Left</string>
+   </property>
+   <property name="toolTip">
+    <string>Выровнять по левому краю</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionRight">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/align-justify.svg</normaloff>:/icons/align-justify.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Right</string>
+   </property>
+   <property name="toolTip">
+    <string>Выровнять по правому краю</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionImage">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/image.svg</normaloff>:/icons/image.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Image</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionLink">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/link-2.svg</normaloff>:/icons/link-2.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Link</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBullet">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/list.svg</normaloff>:/icons/list.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Bullet</string>
+   </property>
+   <property name="toolTip">
+    <string>Маркированный список</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L, B</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionOrdered">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/list-ordered.svg</normaloff>:/icons/list-ordered.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Ordered</string>
+   </property>
+   <property name="toolTip">
+    <string>Нумерованный список</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L, N</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTextColor">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/textColor.svg</normaloff>:/icons/textColor.svg</iconset>
+   </property>
+   <property name="text">
+    <string>TextColor</string>
+   </property>
+   <property name="toolTip">
+    <string>Изменить цвет текста</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionIncreaseIndent">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/increase-indent.svg</normaloff>:/icons/increase-indent.svg</iconset>
+   </property>
+   <property name="text">
+    <string>IncreaseIndent</string>
+   </property>
+   <property name="toolTip">
+    <string>Добавить символ таблуляции в начало строки</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+.</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDecreseIndent">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/decrease-indent.svg</normaloff>:/icons/decrease-indent.svg</iconset>
+   </property>
+   <property name="text">
+    <string>DecreseIndent</string>
+   </property>
+   <property name="toolTip">
+    <string>Удалить символ табуляции из начала строки</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+,</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionEditHTML">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/edit-svg.svg</normaloff>:/icons/edit-svg.svg</iconset>
+   </property>
+   <property name="text">
+    <string>EditHTML</string>
+   </property>
+   <property name="toolTip">
+    <string>Редактировать исходный HTML документ</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSaveDocument">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/save.svg</normaloff>:/icons/save.svg</iconset>
+   </property>
+   <property name="text">
+    <string>SaveDocument</string>
+   </property>
+   <property name="toolTip">
+    <string>Сохранить документ как</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionOpenDocument">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/open.svg</normaloff>:/icons/open.svg</iconset>
+   </property>
+   <property name="text">
+    <string>OpenDocument</string>
+   </property>
+   <property name="toolTip">
+    <string>Открыть документ</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>align-center.svg</file>
+        <file>align-justify.svg</file>
+        <file>align-left.svg</file>
+        <file>align-right.svg</file>
+        <file>bold.svg</file>
+        <file>image.svg</file>
+        <file>italic.svg</file>
+        <file>link-2.svg</file>
+        <file>list.svg</file>
+        <file>list-ordered.svg</file>
+        <file>strikethrough.svg</file>
+        <file>underline.svg</file>
+        <file>textColor.svg</file>
+        <file>arrow-down.svg</file>
+        <file>arrow-up.svg</file>
+        <file>decrease-indent.svg</file>
+        <file>edit-svg.svg</file>
+        <file>increase-indent.svg</file>
+        <file>open.svg</file>
+        <file>save.svg</file>
+    </qresource>
+    <qresource prefix="/styles">
+        <file>default.css</file>
+    </qresource>
+</RCC>

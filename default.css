@@ -1,0 +1,60 @@
+QWidget {
+  border: none;
+}
+QToolBar {
+  background: toolBarBackground;
+  spacing: 9px;
+  padding-top: 5px; padding-bottom: 5px;
+  padding-right: 9px; padding-left: 9px;
+}
+QToolBar::separator {
+  background: border;
+  width: 2px;
+  margin-left: 5px; margin-right: 5px;
+}
+QTextEdit {
+  background: #ECEFF4;
+  color: text;
+}
+QSpinBox {
+  background: border; color: text ;
+  border-radius: boxBorderRadius;
+  padding-left: 5px;
+  margin-left: 2.5px; margin-right: 2.5px;
+}
+QSpinBox::up-button, QSpinBox::down-button {
+  background: icons;
+  width: boxButtonWidth; height: 10px;
+  margin-right: boxButtonMargin;
+}
+QSpinBox::up-button {
+  image: url(:/icons/arrow-up.svg);
+  margin-top: boxButtonMargin;
+  border-top-left-radius: boxButtonBorderRadius;
+  border-top-right-radius: boxButtonBorderRadius;
+}
+QSpinBox::down-button {\
+  image: url(:/icons/arrow-down.svg);
+  margin-bottom: boxButtonMargin;
+  border-bottom-left-radius: boxButtonBorderRadius; border-bottom-right-radius: boxButtonBorderRadius;
+}
+QFontComboBox, QFontComboBox QAbstractItemView {
+  background: border; color: text;
+  border-radius: boxBorderRadius;
+  padding-left: 5px;
+  margin-left: 2.5px; margin-right: 2.5px;
+}
+QFontComboBox {
+
+}
+QFontComboBox::down-arrow {
+  image: url(:/icons/arrow-down.svg);
+  subcontrol-position: bottom center;
+}
+QFontComboBox::drop-down {
+  background: " + icons + ";
+  subcontrol-position: center right;
+  margin-top: boxButtonMargin; margin-bottom: boxButtonMargin; margin-right: boxButtonMargin;
+  width: boxButtonWidth;\
+  border-radius: boxButtonBorderRadius
+}
